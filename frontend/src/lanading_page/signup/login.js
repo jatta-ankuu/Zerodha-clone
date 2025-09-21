@@ -19,7 +19,7 @@ function Login() {
 
         try {
             // Yahan hum backend ke /login endpoint par POST request bhej rahe hain
-            const response = await fetch(']https://zerodha-clone-tfes.onrender.com/login', {
+            const response = await fetch('https://zerodha-clone-tfes.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
