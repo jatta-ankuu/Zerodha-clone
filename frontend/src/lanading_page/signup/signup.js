@@ -21,7 +21,7 @@ function Signup() {
 
         try {
             // Yahan hum backend ke /register endpoint par POST request bhej rahe hain
-            const response = await fetch('http://localhost:3002/register', {
+            const response = await fetch('https://zerodha-clone-tfes.onrender.com/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
