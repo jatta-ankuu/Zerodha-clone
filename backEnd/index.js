@@ -25,8 +25,11 @@ app.use(session(sessionOpt));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cookieParser());
-app.use(cors());
 app.use(bodyParser.json());
+app.use(cors({
+    origin: ["https://zerodha-clone-13-gp3x.onrender.com", "https://zerodha-clone-2-909g.onrender.com"],
+    credentials: true
+}));
 
 passport.use(new local(User.authenticate()));
 

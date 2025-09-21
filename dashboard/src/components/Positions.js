@@ -3,7 +3,7 @@ import axios from "axios";
 const Positions = () => {
   const [allposition , setallpositon]= useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:3002/allposition").then((res)=>{
+    axios.get("https://zerodha-clone-tfes.onrender.com/allposition").then((res)=>{
       setallpositon(res.data);
     });
   },[])

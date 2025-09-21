@@ -12,11 +12,11 @@ const Menu = () => {
   // ✅ Logout function
   const handleLogout = async () => {
     try {
-      const res = await fetch("http://localhost:3002/logout", {
+      const res = await fetch("https://zerodha-clone-tfes.onrender.com/logout", {
         method: "POST",
       });
       if (res.ok) {
-        window.location.href = "http://localhost:3001"; // frontend login/home page
+        window.location.href = "https://zerodha-clone-13-gp3x.onrender.com"; // frontend login/home page
       } else {
         const data = await res.json();
         alert(data.message || "Logout failed");

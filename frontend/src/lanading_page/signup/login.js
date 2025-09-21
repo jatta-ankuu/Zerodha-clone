@@ -19,7 +19,7 @@ function Login() {
 
         try {
             // Yahan hum backend ke /login endpoint par POST request bhej rahe hain
-            const response = await fetch('http://localhost:3002/login', {
+            const response = await fetch(']https://zerodha-clone-tfes.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function Login() {
                 // Agar login successful hai, to user ko dashboard par bhejein
                 alert(`hey..! ${data.user.username},Welcome back`);
                  localStorage.setItem("isLoggedIn", "true");
-                window.location.href = "http://localhost:3000" ; // 'Home' component ka path, jo aapne banaya hai
+                window.location.href = "https://zerodha-clone-2-909g.onrender.com" ; // 'Home' component ka path, jo aapne banaya hai
             } else {
                 const errorData = await response.json();
                 alert(`Login failed: ${errorData.message}`);
